@@ -1,11 +1,11 @@
-# 🧠 RepoMind — AI Commit Message & PR Generator
+#  RepoMind — AI Commit Message & PR Generator
 
 **RepoMind** is a full-stack project that automatically generates **meaningful Git commit messages and pull request descriptions** using Google's **Gemini AI API**.  
 It analyzes your staged code changes (`git diff --staged`) and produces a clear, context-aware summary — helping developers maintain cleaner and more consistent commit histories.
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 **Frontend:** React (with fetch API)  
 **Backend:** FastAPI (Python)  
@@ -14,7 +14,7 @@ It analyzes your staged code changes (`git diff --staged`) and produces a clear,
 
 ---
 
-## 🧩 Folder Structure
+## Folder Structure
 
 ```
 ai-commit-generator/
@@ -31,9 +31,9 @@ ai-commit-generator/
 
 ---
 
-## ⚙️ Backend Setup (FastAPI + Gemini)
+##  Backend Setup (FastAPI + Gemini)
 
-### 1️⃣ Create and activate virtual environment
+### 1️ Create and activate virtual environment
 ```bash
 cd backend
 python -m venv venv
@@ -41,18 +41,18 @@ venv\Scripts\activate   # (Windows)
 # or source venv/bin/activate (Linux/Mac)
 ```
 
-### 2️⃣ Install dependencies
+### 2️ Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Set your Gemini API key
+### 3️ Set your Gemini API key
 Create a `.env` file in the `backend` folder:
 ```
 GOOGLE_API_KEY=your_gemini_api_key_here
 ```
 
-### 4️⃣ Run the FastAPI server
+### 4️ Run the FastAPI server
 ```bash
 uvicorn main:app --reload --port 8080
 ```
@@ -61,19 +61,19 @@ Your backend runs at: [http://127.0.0.1:8080](http://127.0.0.1:8080)
 
 ---
 
-## 💻 Frontend Setup (React)
+##  Frontend Setup (React)
 
-### 1️⃣ Navigate to frontend
+### 1️ Navigate to frontend
 ```bash
 cd ../frontend
 ```
 
-### 2️⃣ Install dependencies
+### 2️ Install dependencies
 ```bash
 npm install
 ```
 
-### 3️⃣ Start the React app
+### 3️ Start the React app
 ```bash
 npm start
 ```
@@ -82,7 +82,7 @@ The frontend runs at: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🔗 API Endpoint
+##  API Endpoint
 
 | Endpoint | Method | Description |
 |-----------|---------|-------------|
@@ -104,7 +104,7 @@ The frontend runs at: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 1. The backend fetches your **staged git diff** using `subprocess.check_output(["git", "diff", "--staged"])`.
 2. Sends the diff to **Google Gemini** with a custom prompt.
@@ -113,7 +113,7 @@ The frontend runs at: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🛠️ Development Notes
+##  Development Notes
 
 - Ensure there are **staged changes** in your repo (`git add <files>`) before clicking "Generate".
 - The backend must run before starting the frontend.
@@ -121,13 +121,13 @@ The frontend runs at: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 📜 License
+##  License
 
 This project is open-source and available under the **MIT License**.
 
 ---
 
-## 👨‍💻 Author
+##  Authors
 
 **Aasif Mohammad**  
 **Tarun Raj Singh**
