@@ -130,5 +130,6 @@ This project is open-source and available under the **MIT License**.
 ##  Authors
 
 **Aasif Mohammad**  
-**Tarun Raj Singh**
 🔗 [GitHub Profile](https://github.com/CodeDev67)
+**Tarun Raj Singh**
+
